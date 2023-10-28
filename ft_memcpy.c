@@ -1,17 +1,15 @@
-size_t	ft_strlen(const char *str);
-
-void	*ft_memcpy(void *dst, const void *src, size_t n)
+void	*ft_memcpy(void *restrict dst, const void *restrict src, size_t n)
 {
-	unsigned int	i;
-
 	if (src == NULL && dst == NULL)
 		return (NULL);
-	i = 0;
-	while (i < n)
+
+	char *aux_dst = (char *)dst;
+	char *aux_src = (char *)src;
+
+	while (n--)
 	{
-		((char *)dst)[i] = ((const char *)src)[i];
-		i++;
-	}
+		*aux_dst++ = *aux_src++;
+	};
 	return (dst);
 }
 
