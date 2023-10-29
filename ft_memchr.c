@@ -15,3 +15,14 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (NULL);
 }
+
+int main ()
+{
+	char buffer[] = {0x13, 0x77, 0x88, 0x93};
+	int to_find = 0x77;
+	size_t n = sizeof(buffer);
+
+	printf("%02X\n", ft_memchr(buffer, to_find, n));
+
+	return 0;
+}
