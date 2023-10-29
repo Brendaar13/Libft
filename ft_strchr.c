@@ -20,3 +20,15 @@ int main()
 
   printf("%s\n", s, delimit);
 }
+
+char	*ft_strchr(const char *s, int c)
+{
+	char	a;
+
+	a = c;
+	while (*s && *s != a)
+	{
+		s++;
+	}
+		return ((char *)s);
+}
