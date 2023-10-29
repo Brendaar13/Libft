@@ -18,3 +18,12 @@ int	ft_atoi(const char *str)
 	}
 	return (result * sign);
 }
+
+int main()
+{
+	char *str = "123";
+	char result = ft_atoi(str);
+
+	printf("%d\n", result);
+}
+numero grandes = negativos x ?
