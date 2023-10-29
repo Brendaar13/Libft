@@ -15,3 +15,14 @@ char	*ft_strrchr(const char *s, int c)
 	}
 	return (0);
 }
+
+int main()
+{
+  char *s = "Hola que tal?";
+  int to_find = 'a';
+
+  char *result = ft_strrchr(s, to_find);
+
+  printf("%s\n", result);
+  return (0);
+}
