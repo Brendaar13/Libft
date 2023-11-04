@@ -17,3 +17,16 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	str[i] = '\0';
 	return (str);
 }
+int main ()
+{
+	int	*f = ft_toupper;
+	char *org = "me gustan las alcachofas";
+	char *result = ft_strmapi(org, f);
+
+	printf("Original: %s\n", org);
+	printf("Resultado: %s\n", result);
+
+	return (0);
+}
+
+mierda
