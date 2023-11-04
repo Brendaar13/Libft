@@ -1,3 +1,5 @@
+#include "libft.h"
+
 void	*ft_memset(void *b, int c, size_t len)
 {
 	unsigned char	*a;
@@ -15,7 +17,8 @@ void	*ft_memset(void *b, int c, size_t len)
 
 int main ()
 {
-	char buffer[5];
+	char buffer[10];
+	ft_strlcpy(buffer, "HELLO 42!", 10);
 	ft_memset(buffer, 'A', 5);
 	printf("%s\n", buffer);
 
