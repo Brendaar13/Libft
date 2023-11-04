@@ -26,3 +26,17 @@ char	*ft_strjoin(const char *s1, const char *s2)
 	}
 	return (NULL);
 }
+
+int main ()
+{
+	char *s1 = "Capibara";
+	char *s2 = " Chiguire";
+
+	char *result = ft_strjoin(s1, s2);
+
+	printf("S1: %s\n", s1);
+	printf("S2: %s\n", s2);
+	printf("Result: %s\n", result);
+
+	return (0);
+}
