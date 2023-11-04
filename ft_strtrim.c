@@ -21,3 +21,18 @@ char	*ft_strtrim(char const *s1, char const *set)
 	}
 	return (str);
 }
+
+int main ()
+{
+	char *s1 = "  Esporadico, Maqiavelico  ";
+	char *set = "   ";
+
+	char *recorte = ft_strtrim(s1, set);
+
+	printf("Original: \"%s\"\n", s1);
+	printf("Recorte: \"%s\"\n", recorte);
+
+	return (0);
+}
+
+No funciona
