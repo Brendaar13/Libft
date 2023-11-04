@@ -21,3 +21,17 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	str[i] = '\0';
 	return (str);
 }
+
+int main ()
+{
+	char *org = "esto es para vosotros aficion siuu";
+	int start = 7;
+	size_t len = 14;
+
+	char *substr = ft_substr(org, start, len);
+
+	printf("Original: %s\n", org);
+	printf("Duplicado: %s\n", substr);
+
+	return (0);
+}
