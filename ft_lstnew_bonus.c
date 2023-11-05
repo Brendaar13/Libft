@@ -9,3 +9,11 @@ t_list	*ft_lstnew(void *content)
 	p->next = NULL;
 	return (p);
 }
+int main ()
+{
+	int data = 42;
+	t_list *new = ft_lstnew(&data);
+	printf("Nuevo nodo: %d\n", *((int *)new->content));
+
+	return (0);
+}
