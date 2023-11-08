@@ -1,21 +1,18 @@
-char	*ft_strrchr(const char *s, int c)
+void	*ft_memchr(const void *s, int c, size_t n)
 {
-	int		i;
-	char	a;
+	unsigned char	*str;
+	unsigned char	to_find;
 
-	a = c;
-	i = ft_strlen(s);
-	if (a == 0)
-		return ((char *) &s[i]);
-	while (i >= 0)
+	str = ((unsigned char *)s);
+	to_find = ((unsigned char)c);
+	while (n > 0)
 	{
-		if (s[i] == a)
-			return ((char *) &s[i]);
-		i--;
+		if (*str == to_find)
+			return (str);
+		str++;
+		n--;
 	}
-	if (a == '\0')
-		return ((char *) &s[i]);
-	return (0);
+	return (NULL);
 }
 
 int main()
