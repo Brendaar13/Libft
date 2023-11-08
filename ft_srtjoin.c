@@ -40,3 +40,23 @@ int main ()
 
 	return (0);
 }
+
+char *ft_strjoin(const char *s1, const char *s2)
+{
+    if (s1 == NULL || s2 == NULL)
+        return NULL;
+
+    size_t n1;
+    size_t n2;
+    char *str = (char *)malloc(n1 + n2 + 1);
+
+	n1 = ft_strlen(s1);
+	n2 = ft_strlen(s2);
+
+    if (str)
+	{
+        ft_strlcpy(str, s1);
+        ft_strlcat(str, s2);
+    }
+    return (str);
+}
