@@ -24,18 +24,18 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 // {
 // 	char src[] = "hambree";
 // 	char dst[6] = "";
-// 	size_t n = 0;
+// 	size_t size = 0;
 
 // 	printf("Before:\n");
 // 	printf("  src:\t\"%s\"\n", src);
 // 	printf("  dst:\t\"%s\"\n", dst);
-// 	printf("  size:\t%u\n", (unsigned) n);
+// 	printf("  size:\t%u\n", (unsigned) size);
 
 // 	n = ft_strlcpy (dst, src, sizeof(dst));
 
 // 	printf("After:\n");
 // 	printf("  src:\t\"%s\"\n", src);
 // 	printf("  dst:\t\"%s\"\n", dst);
-// 	printf("  size:\t%u\n", (unsigned) n);
+// 	printf("  size:\t%u\n", (unsigned) size);
 // 	return (0);
 // }
