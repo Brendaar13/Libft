@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 int	ft_atoi(const char *str)
 {
 	int	result;
@@ -20,12 +21,13 @@ int	ft_atoi(const char *str)
 	return (result * sign);
 }
 
-int main()
-{
-	//en C las variables int tienen MAX_INT y MIN_INT (valor máximo y minimo), estos valores son 2147483647 y -2147483648 respectivamente. 
-	//Todos los valores que salgan del rango(MIN_INT, MAX_INT) no se representan correctamente ya que los valores son superiores a 4 bytes por lo tanto hacen overflow en la memoria 
-	char *str = "2147483647";
-	int result = ft_atoi(str);
+//en C las variables int tienen MAX_INT y MIN_INT (valor máximo y minimo), estos valores son 2147483647 y -2147483648 respectivamente. 
+//Todos los valores que salgan del rango(MIN_INT, MAX_INT) no se representan correctamente ya que los valores son superiores a 4 bytes por lo tanto hacen overflow en la memoria 
+// int main()
+// {
 
-	printf("%d\n", result);
+// 	char *str = "2147483647";
+// 	int result = ft_atoi(str);
+
+// 	printf("%d\n", result);
 }
