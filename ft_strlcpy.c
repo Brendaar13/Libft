@@ -1,3 +1,6 @@
+#include "libft.h"
+#include <stdio.h>
+
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
 	size_t	i;
@@ -16,16 +19,23 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 	return (n);
 }
 
-int main ()
-{
-	char src[] = "hambree";
-	char dst[6];
-	size_t n;
+// Copia src a dts. Si dst es mas pequenio que src copia lo que entre en dst.
+// int main ()
+// {
+// 	char src[] = "hambree";
+// 	char dst[6] = "";
+// 	size_t n = 0;
 
-	n = ft_strlcpy (dst, src, sizeof(dst));
+// 	printf("Before:\n");
+// 	printf("  src:\t\"%s\"\n", src);
+// 	printf("  dst:\t\"%s\"\n", dst);
+// 	printf("  size:\t%u\n", (unsigned) n);
 
-	printf("%s\n", src);
-	printf("%s\n", dst);
-	printf("%zu\n", n);
-	return (0);
-}
+// 	n = ft_strlcpy (dst, src, sizeof(dst));
+
+// 	printf("After:\n");
+// 	printf("  src:\t\"%s\"\n", src);
+// 	printf("  dst:\t\"%s\"\n", dst);
+// 	printf("  size:\t%u\n", (unsigned) n);
+// 	return (0);
+// }
