@@ -10,3 +10,4 @@ void	ft_bzero(void *s, size_t n)
 	printf("%s\n", buffer);
 	return (0);
 }*/
+Revisar
