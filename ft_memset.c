@@ -23,4 +23,5 @@ void	*ft_memset(void *b, int c, size_t len)
 	printf("%s\n", buffer);
 
 	return 0;
-}*/
+}*/ 
+!!
