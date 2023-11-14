@@ -15,7 +15,7 @@ void	*ft_memset(void *b, int c, size_t len)
 	return (b);
 }
 
-int main ()
+/*int main ()
 {
 	char buffer[10];
 	ft_strlcpy(buffer, "HELLO 42!", 10);
@@ -23,4 +23,4 @@ int main ()
 	printf("%s\n", buffer);
 
 	return 0;
-}
+}*/
