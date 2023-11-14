@@ -26,3 +26,4 @@ int main()
 	printf("%s\n", ft_memmove(dst, src, n));
 	return (0);
 }
+Revisar main
