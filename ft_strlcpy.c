@@ -20,7 +20,8 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 }
 
 // Copia src a dts. Si dst es mas pequenio que src copia lo que entre en dst.
-// int main ()
+
+int main ()
 // {
 // 	char src[] = "hambree";
 // 	char dst[6] = "";
