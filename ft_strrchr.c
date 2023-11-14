@@ -1,27 +1,31 @@
-void	*ft_memchr(const void *s, int c, size_t n)
+char	*ft_strrchr(const char *s, int c)
 {
-	unsigned char	*str;
-	unsigned char	to_find;
+	int		i;
+	char	a;
 
-	str = ((unsigned char *)s);
-	to_find = ((unsigned char)c);
-	while (n > 0)
+	a = c;
+	i = ft_strlen(s);
+	if (a == 0)
+		return ((char *) &s[i]);
+	while (i >= 0)
 	{
-		if (*str == to_find)
-			return (str);
-		str++;
-		n--;
+		if (s[i] == a)
+			return ((char *) &s[i]);
+		i--;
 	}
-	return (NULL);
+	if (a == '\0')
+		return ((char *) &s[i]);
+	return (0);
 }
 
-int main()
+/*int main()
 {
   char *s = "Hola que tal?";
-  int to_find = 'a';
+  int delimit = 'a';
+  char *n;
 
-  char *result = ft_strrchr(s, to_find);
+  n = ft_strrchr(s, delimit);
 
-  printf("%s\n", result);
-  return (0);
-}
+  printf("Original: %s\n", s);
+  printf("Delimitado: %s\n", n);
+}*/
