@@ -17,7 +17,7 @@ char	*ft_strchr(const char *s, int c)
 /*int main()
 {
   char *s = "Hola que tal?";
-  int delimit = 'u';
+  int delimit = 'a';
   char *n;
 
   n = ft_strchr(s, delimit);
