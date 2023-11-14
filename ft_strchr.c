@@ -13,22 +13,15 @@ char	*ft_strchr(const char *s, int c)
 		return ((char *)s);
 	return (0);
 }
-int main()
+
+/*int main()
 {
-  char s[] = "Hola que tal?"
-  char delimit = "u"
+  char *s = "Hola que tal?";
+  int delimit = 'u';
+  char *n;
 
-  printf("%s\n", s, delimit);
-}
+  n = ft_strchr(s, delimit);
 
-char	*ft_strchr(const char *s, int c)
-{
-	char	a;
-
-	a = c;
-	while (*s && *s != a)
-	{
-		s++;
-	}
-		return ((char *)s);
-}
+  printf("Original: %s\n", s);
+  printf("Delimitado: %s\n", n);
+}*/
