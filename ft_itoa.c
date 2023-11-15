@@ -49,10 +49,10 @@ char	*ft_itoa(int n)
 	return (str);
 }
 
-int main()
+/*int main()
 {
 	int n = 123;
 	char *result = ft_itoa(n);
 
 	printf("%s\n", result);
-}
+}*/
