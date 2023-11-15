@@ -54,8 +54,8 @@ char *ft_strjoin(const char *s1, const char *s2)
 
     return (str);
 }
-// Crear una string concatenando 2 strings existentes. En este caso concreo hay que utilizar total como la suma de length de ambos string más un byte nulo ('\0'). 
-// Si se ha podido reservar la memoria el tamaño reservado va a ser total, por lo que se tiene que utilizar esto.
+Crear una string concatenando 2 strings existentes. En este caso concreo hay que utilizar total como la suma de length de ambos string más un byte nulo ('\0'). 
+Si se ha podido reservar la memoria el tamaño reservado va a ser total, por lo que se tiene que utilizar esto.
 // int main ()
 // {
 // 	char *s1 = "Capibara";
