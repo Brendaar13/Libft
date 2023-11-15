@@ -12,7 +12,7 @@ char	*ft_strdup(const char *s1)
 	return (ptr);
 }
 
-int main ()
+/*int main ()
 {
 	char *org = "Ver el mundo arder";
 	char *dup = ft_strdup(org);
@@ -21,4 +21,4 @@ int main ()
 	printf("Duplicado: %s\n", dup);
 
 	return (0);
-}
+}*/
