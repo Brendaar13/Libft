@@ -8,7 +8,7 @@ void	*ft_calloc(size_t count, size_t size)
 	ft_bzero(ptr, size * count);
 	return (ptr);
 }
-int main ()
+/*int main ()
 {
 	size_t	count = 5;
 	size_t	size = sizeof(size_t);
@@ -23,4 +23,4 @@ int main ()
 			printf("%zu\n", array [2]);
 	}
 		return (0);
-}
+}*/
