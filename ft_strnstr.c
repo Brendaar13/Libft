@@ -26,7 +26,7 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 int main ()
 {
 	char *haystack = "Testeo de esta shit";
-	char *needle = "shit";
+	char *needle = "esta";
 	char *result = ft_strnstr(haystack, needle, 50);
 
 	printf("%s\n", result);
