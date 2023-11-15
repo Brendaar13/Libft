@@ -22,7 +22,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	return (str);
 }
 
-int main ()
+/*int main ()
 {
 	char *org = "esto es para vosotros aficion siuu";
 	int start = 7;
@@ -34,4 +34,4 @@ int main ()
 	printf("Duplicado: %s\n", substr);
 
 	return (0);
-}
+}*/
