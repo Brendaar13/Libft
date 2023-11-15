@@ -30,3 +30,4 @@ int main()
 	return (0)
 		;
 }
+Revisar el main
