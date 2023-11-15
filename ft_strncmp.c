@@ -14,8 +14,8 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 }
 int main()
 {
-	char *s1 = "Tengo mucho sueño y hambre";
-	char *s2 = "Tengo mucha hambre";
+	char *s1 = "Tengo sueno";
+	char *s2 = "Tengo Sueno";
 	size_t n = 7;
 
 	int result = ft_strncmp(s1, s2, n);
@@ -23,4 +23,3 @@ int main()
 	printf("%d\n", result);
 	return (0);
 }
-Revisar main
