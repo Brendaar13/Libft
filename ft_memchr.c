@@ -18,12 +18,13 @@ void	*ft_memchr(const void *s, int c, size_t n)
 
 int main ()
 {
-	char buffer[] = {0x13, 0x77, 0x88, 0x93};
-	int to_find = 0x77;
-	size_t n = sizeof(buffer);
+	char str[] = "Stille Wasser sind tief.";
+	int to_find = 'W';
+	size_t n = sizeof(str);
+	char *result = (char *)ft_memchr(str, to_find, n);
 
-	printf("%02X\n", ft_memchr(buffer, to_find, n));
+	printf("Original: %s\n", str);
+	printf("Resut: %s\n", result);
 
 	return 0;
 }
-Revisar main
