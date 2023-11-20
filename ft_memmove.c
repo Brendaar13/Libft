@@ -19,11 +19,11 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 
 int main()
 {
-	char src[] = "Me quiero morir";
-	char dst[5];
-	size_t n = ft_strlen(src) + 1;
+	char src[] = "hola que";
+	char *dst = src + 2;
 
-	printf("%s\n", ft_memmove(dst, src, n));
+	printf("Before: %s\n", src);
+	char *result = ft_memmove(dst, src, 5);
+	printf("After:\n src: %s\n result: %s\n",src, result);
 	return (0);
 }
-Revisar main
