@@ -14,13 +14,10 @@ void	ft_putstr_fd(char *s, int fd)
 
 int main ()
 {
-	int fd = 2;
+	int fd = 1;
 	char *str = "Quiero un coco";
-
-	printf("%d\n", fd);
+	
 	ft_putstr_fd(str, fd);
 
 	return (0);
 }
-
-npi si funciona
