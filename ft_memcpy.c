@@ -18,8 +18,10 @@ int main ()
 {
 	char src[] = "Me quiero mori";
 	char dst[5];
-	size_t n = ft_strlen(src) + 1;
-	printf("%s\n", ft_memcpy(dst, src, n));
+    // - 1 para reservar caracter nulo
+	size_t n = sizeof(dst) - 1;
+	char *result = ft_memcpy(dst, src, n);
+	printf("%s\n", src);
+	printf("%s\n", result);
 	return (0);
 }
-Revisar main
