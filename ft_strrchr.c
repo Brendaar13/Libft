@@ -1,20 +1,20 @@
-char	*ft_strrchr(const char *s, int c)
+char	*ft_strrchr(const char *string, int c)
 {
 	int		i;
-	char	a;
+	char	alm;
 
-	a = c;
-	i = ft_strlen(s);
-	if (a == 0)
-		return ((char *) &s[i]);
+	alm = c;
+	i = ft_strlen(string);
+	if (alm == 0)
+		return ((char *) &string[i]);
 	while (i >= 0)
 	{
-		if (s[i] == a)
-			return ((char *) &s[i]);
+		if (string[i] == alm)
+			return ((char *) &string[i]);
 		i--;
 	}
-	if (a == '\0')
-		return ((char *) &s[i]);
+	if (alm == '\0')
+		return ((char *) &string[i]);
 	return (0);
 }
 
