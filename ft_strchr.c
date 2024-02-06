@@ -1,16 +1,16 @@
-char	*ft_strchr(const char *s, int c)
+char	*ft_strchr(const char *string, int c)
 {
-	char	a;
+	char	alm;
 
-	a = c;
-	while (*s)
+	alm = c;
+	while (*string)
 	{
-		if (*s == a)
-			return ((char *) s);
-		s++;
+		if (*string == alm)
+			return ((char *) string);
+		string++;
 	}
-	if (a == '\0')
-		return ((char *)s);
+	if (alm == '\0')
+		return ((char *)string);
 	return (0);
 }
 
