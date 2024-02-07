@@ -6,9 +6,9 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	if (*needle == '\0')
 		return ((char *) haystack);
 	i = 0;
-	j = 0;
 	while (haystack[i] != '\0' && i < len)
 	{
+	j = 0;
 		if (haystack[i] == needle[0])
 		{
 			while (i + j < len && needle[j] && haystack[i + j] == needle[j])
