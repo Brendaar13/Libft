@@ -14,7 +14,19 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	return (dst);
 }
 
-int main ()
+/*int main ()
+{
+	char src[] = "Me quiero mori";
+	char dst[5];
+	size_t n = sizeof(dst);
+	char *result = ft_memcpy(dst, src, n);
+	printf("Original: %s\n", src);
+	printf("Copy: %s\n", result);
+	return (0);
+}*/
+
+
+/*int main ()
 {
 	char src[] = "Me quiero mori";
 	char dst[5];
@@ -24,4 +36,4 @@ int main ()
 	printf("%s\n", src);
 	printf("%s\n", result);
 	return (0);
-}
+} main bueno arriba*/ 
