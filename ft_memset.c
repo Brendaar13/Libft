@@ -17,11 +17,11 @@ void	*ft_memset(void *ptr, int val, size_t num)
 
 /*int main ()
 {
-	char buffer[10];
-	ft_strlcpy(buffer, "HELLO 42!", 10);
-	ft_memset(buffer, 'A', 5);
-	printf("%s\n", buffer);
+	char str[]= "Holaaa";
+
+	printf("Before: %s\n", str);
+	ft_memset(str,'A', 5);
+	printf("After:%s\n", str);
 
 	return 0;
-}*/ 
-!!
+}*/
