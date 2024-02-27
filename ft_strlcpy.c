@@ -21,22 +21,21 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 
 // Copia src a dts. Si dst es mas pequenio que src copia lo que entre en dst.
 
-int main ()
-// {
-// 	char src[] = "hambree";
-// 	char dst[6] = "";
-// 	size_t size = 0;
+/*int main ()
+{
+ 	char src[] = "hambree";
+ 	char dst[6] = "";
+	char result;
 
-// 	printf("Before:\n");
-// 	printf("  src:\t\"%s\"\n", src);
-// 	printf("  dst:\t\"%s\"\n", dst);
-// 	printf("  size:\t%u\n", (unsigned) size);
+ 	printf("Before:\n");
+ 	printf("  src:%s\n", src);
+ 	printf("  dst:%s\n", dst);
 
-// 	n = ft_strlcpy (dst, src, sizeof(dst));
+	result = ft_strlcpy (dst, src, sizeof(dst));
 
-// 	printf("After:\n");
-// 	printf("  src:\t\"%s\"\n", src);
-// 	printf("  dst:\t\"%s\"\n", dst);
-// 	printf("  size:\t%u\n", (unsigned) size);
-// 	return (0);
-// }
+ 	printf("After:\n");
+ 	printf("  src:%s\n", src);
+ 	printf("  dst:%s\n", dst);
+
+ 	return (0);
+}*/
