@@ -19,11 +19,11 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 
 int main()
 {
-	char src[] = "hola que";
+	char src[] = "hola jeje";
 	char *dst = src + 2;
 
-	printf("Before: %s\n", src);
+	printf("Original: %s\n", src);
 	char *result = ft_memmove(dst, src, 5);
-	printf("After:\n src: %s\n result: %s\n",src, result);
+	printf("Copy:\n src: %s\n result: %s\n",src, result);
 	return (0);
 }
