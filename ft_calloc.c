@@ -3,10 +3,12 @@ void	*ft_calloc(size_t count, size_t size)
 	size_t	ttsize;
 	void	*ptr;
 
-	ttsize = count * size;
-	ptr = malloc(ttsize);
 	if (count == SIZE_MAX || size == SIZE_MAX)
 		return (NULL);
+	ttsize = count * size;
+	ptr = malloc(ttsize);
+	//if (count == SIZE_MAX || size == SIZE_MAX)
+		//return (NULL);
 	if (ptr)
 		memset(ptr, 0, ttsize);
 	return (ptr);
