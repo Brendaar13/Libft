@@ -4,11 +4,11 @@
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
 	size_t	i;
-	size_t	n;
+	size_t	alm;
 
-	n = ft_strlen(src);
+	alm = ft_strlen(src);
 	if (size < 1)
-		return (n);
+		return (alm);
 	i = 0;
 	while (src[i] != '\0' && i < (size - 1))
 	{
@@ -16,7 +16,7 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 		i++;
 	}
 		dst[i] = '\0';
-	return (n);
+	return (alm);
 }
 
 // Copia src a dts. Si dst es mas pequenio que src copia lo que entre en dst.
