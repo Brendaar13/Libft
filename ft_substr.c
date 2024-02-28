@@ -2,18 +2,18 @@ char	*ft_substr(char const *str, unsigned int start, size_t len)
 {
 	char	*alm;
 	size_t	i;
-	size_t	clen;
+	size_t	len_src;
 
 	i = 0;
-	clen = ft_strlen(str);
-	if (start >= clen)
+	len_src = ft_strlen(str);
+	if (start >= len_src)
 		return (ft_strdup(""));
-	if (len > clen - start)
-		len = clen - start;
+	if (len > len_src - start)
+		len = len_src - start;
 	alm = ft_calloc((len + 1), sizeof(char));
 	if (!alm)
 		return (NULL);
-	while (len > i && start < clen)
+	while (len > i && start < len_src)
 	{
 		alm[i] = str[i + start];
 		i++;
