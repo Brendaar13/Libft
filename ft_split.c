@@ -1,25 +1,25 @@
-static int	sep_finder(char str, char c)
+static int	c_strfinder(char str, char c)
 {
 	if (str == c)
 		return (1);
 	return (0);
 }
 
-static int	count_words(char *str, char c)
+static int	count_words(char *str, char delimitador)
 {
 	int	i;
-	int	words;
+	int	words_found;
 
 	i = 0;
-	words = 0;
+	words_found = 0;
 	while (str[i])
 	{
-		if (!sep_finder(str[i], c) && (sep_finder(str[i + 1], c)
+		if (!c_strfinder(str[i], delimitador) && (c_strfinder(str[i + 1], delimitador)
 				|| str[i + 1] == '\0'))
-			words++;
+			words_found++;
 		i++;
 	}
-	return (words);
+	return (words_found);
 }
 
 static void	free_str(char **str)
@@ -35,47 +35,47 @@ static void	free_str(char **str)
 	free(str);
 }
 
-static int	write_str(char **r, char *str, char c)
+static int	divstr_substr(char **alm, char *str, char delimitador)
 {
 	int	i;
-	int	j;
-	int	words;
+	int	len;
+	int	num_substr;
 
 	i = 0;
-	words = 0;
+	num_substr = 0;
 	while (str[i])
 	{
-		if (sep_finder(str[i], c))
+		if (c_strfinder(str[i], delimitador))
 			i++;
 		else
 		{
-			j = 0;
-			while (!sep_finder(str[i + j], c) && (str[i + j]))
+			len = 0;
+			while (!c_strfinder(str[i + len], delimitador) && (str[i + len]))
 				j++;
-			r[words] = ft_substr(str, i, j);
-			if (r[words] == NULL)
+			alm[num_substr] = ft_substr(str, i, len);
+			if (alm[num_substr] == NULL)
 				return (free_str(r), 0);
-			i += j;
-			words++;
+			i += len;
+			num_substr++;
 		}
 	}
 	return (1);
 }
 
-char	**ft_split(char const *s, char c)
+char	**ft_split(char const *str, char delimitador)
 {
-	int		words;
-	char	**res;
+	int		alm_words;
+	char	**alm_substr;
 
-	if (!s)
+	if (!str)
 		return (NULL);
-	words = count_words((char *)s, c);
-	res = ft_calloc(words + 1, sizeof(char *));
-	if (!res)
+	alm_words = count_words((char *)str, delimitador);
+	alm_substr = ft_calloc(alm_words + 1, sizeof(char *));
+	if (!alm_substr)
 		return (NULL);
-	if (!write_str(res, (char *)s, c))
+	if (!divstr_substr(alm_substr, (char *)str, delimitador))
 		return (NULL);
-	return (res);
+	return (alm_substr);
 }
 
 int main() {
