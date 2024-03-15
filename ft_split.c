@@ -79,14 +79,15 @@ char	**ft_split(char const *str, char delimitador)
 }
 
 int main() {
-    char str[] = "Ayudaaadtete";
-    char delimiter = 'd';
-    char **result;
-    
-    result = ft_split(str, delimiter);
-    
-    while (result[i] != NULL){
-        printf("%s\n", result[i++]);
-    }
+    char const *str = "ayudaaa tengo fastidio";
+    char delimitador = ' ';
+    char **result = ft_split(str,delimitador);
+	int i = 0;
+
+    while (result[i])
+	{
+        printf("%s\n", result[i]);
+		i++;
+	}
     return (0);
 }
