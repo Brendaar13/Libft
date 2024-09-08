@@ -1,4 +1,7 @@
 # Libft
+
+El proyecto es una experiencia académica destacada para desarrollar una biblioteca personalizada de funciones en C. Este proyecto no solo profundiza mi comprensión del lenguaje C al recrear funciones estándar y explorar su implementación interna, sino que también refuerza mis habilidades en la gestión manual de memoria, esencial para crear programas eficientes y sin errores. Además, me permitió gestionar estructuras de datos complejas, como listas enlazadas, y realizar operaciones matemáticas básicas, estableciendo una base sólida que puedo aplicar a futuros desarrollos. En resumen, libft es un proyecto que combina el perfeccionamiento técnico con la creación de una herramienta reutilizable, demostrando mi capacidad para abordar desafíos complejos en programación y gestión de datos.
+
 ## Makefile
 
 Se utiliza para automatizar el proceso de compilación y enlazado de un proyecto a través de automatización de compilación y gestión de dependencias, lo que facilita la gestión y la construcción del código fuente.
