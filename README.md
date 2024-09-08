@@ -24,49 +24,49 @@ It is used to automate the process of compiling and linking a project through co
 | Funciones  | Descripción |
 | ------------- | ------------- |
 | Isalpha  | Determines if the character is an alphabetic letter                                                                                                    |
-| Isdigit  | Determina si el carácter es un digito.                                                                                                                 |
-| Isalnum  | Determina si el carácter es una letra alfabética o un digito.                                                                                          |
-| Isascii  |  Determina si el carácter es un carácter ASCII válido                                                                                                  |
-| Isprint  | Determina si el carácter es imprimible.                                                                                                                |
-| Strlen   | Devuelve la longitud de un string.                                                                                                                     |
-| Memset   | Llena un bloque de memoria con un valor específico.                                                                                                    |
-| Bzero    | Establece un bloque de memoria a 0, elimina todo lo que contenga, suele usarse para asegurarse de que ese bloque esta vacio.                           |
-| Memcpy   | Copiar un bloque de memoria desde una ubicación origen a una de destino.                                                                               |
-| Memmove  | Copiar un bloque de memoria desde una ubicación origen a una de destino, incluso si las áreas de origen y de destino se superponen/solapan.            |
-| Strlcpy  | Copia una cadena de string desde una ubicación de origen a una de destino.                                                                             |
-| Strlcat  | Concatena dos cadenas de string, colocando la cadena de origen al final de la cadena de destino.                                                       |
-| Toupper  | Convierte el carácter a mayúsculas.                                                                                                                    |
-| Tolower  | Convierte el carácter a minúsculas.                                                                                                                    |
-| Strchr   | Busca la primera ocurrencia de un carácter en específico en un string.                                                                                 |
-| Strrchr  | Busca la última ocurrencia de un carácter en específico en un string.                                                                                  |
+| Isdigit  | Determines if the character is a digit                                                                                                                 |
+| Isalnum  | Determines if the character is an alphabetic letter or a digit                                                                                         |
+| Isascii  | Determines if the character is a valid ASCII character                                                                                                 |
+| Isprint  | Determines if the character is printable.                                                                                                              |
+| Strlen   | Returns the length of a string                                                                                                                         |
+| Memset   | Fills a memory block with a specific value                                                                                                             |
+| Bzero    | Sets a block of memory to 0, removes everything in it, usually used to make sure that block is empty                                                   |
+| Memcpy   | Copy a block of memory from a source location to a destination location.                                                                               |
+| Memmove  | Copy a block of memory from a source location to a destination location, even if the source and destination areas overlap.                             |
+| Strlcpy  | Copy a string from a source location to a destination location.                                                                                        |
+| Strlcat  | Concatenates two string strings, placing the source string at the end of the target string.                                                            |
+| Toupper  | Convert the character to uppercase.                                                                                                                    |
+| Tolower  | Convert the character to lowercase.                                                                                                                    |
+| Strchr   | Searches for the first occurrence of a specific character in a string.                                                                                 |
+| Strrchr  | Searches for the last occurrence of a specific character in a string.                                                                                  |
 | Strncmp  | Comparar los primeros X caracteres de dos cadenas de string. Se detiene en el caracter nulo.                                                           |
-| Memchr   | Content CellBusca valores específicos en bloques de memoria.                                                                                           |
-| Memcmp   | Compara bloques de memoria. * Si el resultado es 0, significa que los bloques de memoria son iguales. * Si el resultado es menor que 0, significa que el primer byte que difiere en **`ptr1`** es menor/mayor que el byte correspondiente en **`ptr2`**. Arroja el valor de la diferencia entre ambos|
-| Strnstr  | Busca la primera aparición de una subcadena en un string limitando la búsqueda (a los primeros caracteres de la cadena).                               |
-| Atoi     | Convertir un string a un valor de tipo entero. Ej: si pones “42” ➡️ “42” pero en entero aunque visualmente no se vea la diferencia.                     |
-| Calloc   | Asigna un bloque de memoria e inicializa los bytes a 0.                                                                                                |
-| Strdup   | Se utiliza para duplicar un string desde el origen hasta el puntero de la nueva cadena que ya tuvo previamente una asignación de memoria.              |
-| Substr   | Extraer una subcadena de una cadena más grande.                                                                                                        |
-| Strjoin  | Concatenar múltiples cadenas.                                                                                                                          |
-| Strtrim  | Recortar caracteres específicos al principio y al final de un string como espacios, tabulaciones, saltos de línea, etc.                                |
-| Split    | Dividir una cadena en partes más pequeñas, basadas en un delimitador específico. Ej: “Manzana, Naranjas, Uva” ➡️  ”Manzana” “Naranjas” ”Uva”.           |
-| Itoa     | Convertir un número entero en una cadena de caracteres.                                                                                                |
-| Strmapi  | Permite usar una función como parámetro y colocarlas caracter por caracter en un string.                                                               |
-| Striteri | Permite usar una función como argumento y pasarla caracter por caracter, pasándolo como primer argumento.                                              |
-|Putchar_fd| Imprimir caracteres pero en un archivo.                                                                                                                |
-| Putstr_fd| Imprimir un string en un archivo.                                                                                                                      |
-|Putendl_fd| Imprime una cadena seguido de una nueva línea.                                                                                                         |
-|Putnbr_fd | Imprimir un número entero dentro de los valores máximos de int.                                                                                        |
+| Memchr   | Compare the first X characters of two string strings. Stops at the null character.                                                                     |
+| Memcmp   | Compare memory blocks. * If the result is 0, it means that the memory blocks are the same. * If the result is less than 0, it means that the first byte that differs in **`ptr1`** is less/greater than the corresponding byte in **`ptr2`**. It returns the value of the difference between the two bytes.|
+| Strnstr  | Searches for the first occurrence of a substring in a string by limiting the search (to the first characters of the string.                            |
+| Atoi     | Convert a string to an integer value. E.g.: if you type “42” ➡️ “42” but in integer although visually you can't see the difference.                    |
+| Calloc   | Allocates a block of memory and initializes the bytes to 0.                                                                                            |
+| Strdup   | Used to duplicate a string from the source to the pointer of the new string that has already had a previous memory allocation.                         |
+| Substr   | Extract a substring from a larger string.                                                                                                              |
+| Strjoin  | Concatenate multiple strings.                                                                                                                          |
+| Strtrim  | Trim specific characters at the beginning and end of a string, such as spaces, tabs, line breaks, etc.                                                 |
+| Split    | Split a string into smaller parts, based on a specific delimiter. Ex: “Apple, Oranges, Grape” ➡️ “Apple” “Oranges” “Grape”.                             |
+| Itoa     | Convert an integer into a string.                                                                                                                      |
+| Strmapi  | Allows you to use a function as a parameter and place it character by character in a string.                                                           |
+| Striteri | Use a function as an argument and pass it character by character, passing it as the first argument.                                                    |
+|Putchar_fd| Print characters but in a file.                                                                                                                        |
+| Putstr_fd| Print a string to a file.                                                                                                                              |
+|Putendl_fd| Print a string followed by a new line.                                                                                                                 |
+|Putnbr_fd | Print an integer number within the maximum values of int.                                                                                              |
 
 ## Bonus
 
 | Funciones  | Descripción |
 | ------------- | ------------- |
-| Lstnew   | Crea un nuevo nodo y le añade un contenido.                                                                                                            |
-| Lstadd_front | Agregar un nuevo elemento al frente de la lista enlazada.                                                                                          | 
-| Lstsize  | Cuenta el número de nodos de una lista.                                                                                                                |
-| Lstlast  | Devuelve el último nodo de la lista.                                                                                                                   |
-| Lstadd_back |Agrega un nuevo elemento al final de la lista enlazada.                                                                                              |
-| Lstdelone | Eliminar un nodo específico utilizando una función para liberar memoria evitando la fuga de memoria.                                                  |
-| Lstclear | Eliminar todos los nodos, liberando la memoria de todos los nodos y sus contenidos.                                                                    |
-| Lstiter  | Itera la lista y aplica la función en el contenido de cada nodo.                                                                                       |
+| Lstnew   |  Creates a new node and adds content to it.                                                                                                            |
+| Lstadd_front | Add a new element to the front of the linked list.                                                                                                 | 
+| Lstsize  | Count the number of nodes in a list   .                                                                                                                |
+| Lstlast  | Return the last node in the list.                                                                                                                      |
+| Lstadd_back | Adds a new element to the end of the linked list.                                                                                                   |
+| Lstdelone | Delete a specific node using a function to free memory by preventing memory leakage.                                                                  |
+| Lstclear | Delete all nodes, freeing the memory of all nodes and their contents.                                                                                  |
+| Lstiter  | Iterate the list and apply the function on the contents of each node.                                                                                  |
